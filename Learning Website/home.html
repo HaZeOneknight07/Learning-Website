@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Learning Website</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/darkmode.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="img/PacMan.svg">
+</head>
+<body>
+    <header>
+        <a href="index.html" target="_blank">
+            <img src="img/PacMan.svg" alt="PacManLogo">
+        </a>
+        <h1>Learning Website</h1>
+
+        <!-- Dark mode toggle -->
+        <div class="darkmode">
+            <div class="light fas fa-sun"></div>
+            <div class="dark fas fa-moon"></div>
+        </div>
+    </header>
+
+    <main>
+        
+    </main>
+    
+
+    <footer>
+        2024 &copy; Ty & Joscelyn.
+    </footer>
+    
+    <script>
+
+        const darkmodeToggle = document.querySelector(".darkmode");
+
+        darkmodeToggle.addEventListener("click", function () {
+            document.body.classList.toggle("dark");
+
+            const isDarkMode = document.body.classList.contains("dark");
+            document.body.style.background = isDarkMode ? "var(--bg-dark)" : "var(--bg-colour)";
+            document.body.style.color = isDarkMode ? "" : "var(--txt-colour)";
+            // Toggle visibility of light and dark mode icons
+            const lightIcon = document.querySelector('.darkmode .light');
+            const darkIcon = document.querySelector('.darkmode .dark');
+
+            if (isDarkMode) {
+                lightIcon.style.display = 'inline-block';
+                darkIcon.style.display = 'none';
+            } else {
+                lightIcon.style.display = 'none';
+                darkIcon.style.display = 'inline-block';
+            }
+        });
+    </script>
+</body>
+</html>
