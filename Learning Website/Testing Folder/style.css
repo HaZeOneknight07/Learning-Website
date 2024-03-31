@@ -84,19 +84,19 @@ Colour Pallet Dark Mode:
     background: rgb(255 255 255 / 50%);
   }
   
-  nav a {
+  a {
     margin-right: 25px;
     color: var(--primary-colour);
     text-decoration: none;
-    border-bottom: 3px solid transparent; /* Apply border to all links */
+    border-bottom: 3px solid transparent;
     font-weight: bold;
-}
-
-  nav a:hover,
-  nav a:focus {
+  }
+  
+  a:hover,
+  a:focus {
     color: var(--on-background);
-    border-bottom: 3px solid; /* Apply border only to nav links on hover/focus */
-}
+    border-bottom: 3px solid;
+  }
   
   /* Home Section */
   .title-group {
@@ -216,7 +216,6 @@ Colour Pallet Dark Mode:
   
   .fab:hover {
     color: var(--on-background);
-    border: none !important;
   }
   
   /* Dark Mode Toggle */
@@ -260,7 +259,7 @@ Colour Pallet Dark Mode:
     position: absolute;
     right: 0;
     top: 0;
-    transition: background 0.3s ease; /* Added transition for background color */
+    transition: 0.4s;
   }
   
   .slider::before {
@@ -270,7 +269,7 @@ Colour Pallet Dark Mode:
     height: 26px;
     left: 4px;
     position: absolute;
-    transition: transform 0.3s ease; /* Added transition for transform */
+    transition: 0.4s;
     width: 26px;
   }
   
@@ -278,7 +277,7 @@ Colour Pallet Dark Mode:
     background: var(--primary-colour); /* Change background color for checked state */
   }
   
-  .theme-switch input:checked + .slider::before {
+  input:checked + .slider::before {
     transform: translateX(26px);
   }
   
@@ -316,3 +315,75 @@ footer {
     width: 100%;
     border-radius: 1rem 1rem 0 0;
 }
+
+.login-box {
+    position: relative;
+    width: 400px;
+    margin: 19rem auto;
+    padding: 40px;
+    background: var(--primary-colour);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px var(--sec-colour);
+    border-radius: 10px;
+  }
+  
+  .login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: var(--txt-colour);
+    text-align: center;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--on-background);
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid var(--on-background);
+    outline: none;
+    background: transparent;
+  }
+  
+  .login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--txt-colour);
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus~label,
+  .login-box .user-box input:valid~label {
+    top: -20px;
+    left: 0;
+    color: var(--on-background);
+    font-size: 12px;
+  }
+  
+  .login-box form button {
+    padding: 10px 20px;
+    background: var(--secondary-colour);
+    color: var(--on-background);
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: .5s;
+    margin-top: 10px;
+    letter-spacing: 4px;
+    cursor: pointer;
+  }
+  
+  .login-box form button:hover {
+    box-shadow: 0 0 15px var(--secondary-colour);
+  }
