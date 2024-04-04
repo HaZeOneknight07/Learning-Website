@@ -1,3 +1,4 @@
+
 const toggleSwitch = document.querySelector('input[type="checkbox"]');
 const nav = document.getElementById('nav');
 const toggleIcon = document.getElementById('toggle-icon');
@@ -44,23 +45,25 @@ function toggleDarkLightMode(mode) {
   iconImg.src = mode === DARK_THEME ? 'img/squash.png' : 'img/squish.png';
 
   // Changing images
-  mode === DARK_THEME ? imageMode('dark') : imageMode('light');
-  
+  imageMode(mode);
+
   // Change favicon
   changeFavicon(mode);
 }
 
+// Function to toggle dark mode
+function toggleDarkMode() {
+  const isDarkMode = document.documentElement.getAttribute('data-theme') === 'dark';
+  toggleSwitch.checked = isDarkMode;
+  toggleDarkLightMode(isDarkMode ? DARK_THEME : LIGHT_THEME);
+}
+
 // Switch Theme Dynamically
 function switchTheme(event) {
-  if (event.target.checked) {
-    document.documentElement.setAttribute('data-theme', 'dark');
-    localStorage.setItem('theme', 'dark');
-    toggleDarkLightMode(DARK_THEME);
-  } else {
-    document.documentElement.setAttribute('data-theme', 'light');
-    localStorage.setItem('theme', 'light');
-    toggleDarkLightMode(LIGHT_THEME);
-  }
+  const mode = event.target.checked ? DARK_THEME : LIGHT_THEME;
+  document.documentElement.setAttribute('data-theme', mode);
+  localStorage.setItem('theme', mode);
+  toggleDarkLightMode(mode);
 }
 
 // Event Listeners
@@ -70,9 +73,7 @@ toggleSwitch.addEventListener('change', switchTheme);
 const currentTheme = localStorage.getItem('theme');
 if (currentTheme) {
   document.documentElement.setAttribute('data-theme', currentTheme);
-
-  if (currentTheme === 'dark') {
-    toggleSwitch.checked = true;
-    toggleDarkLightMode(DARK_THEME);
-  }
+  toggleDarkLightMode(currentTheme);
+} else {
+  toggleDarkMode(); // Initial setup based on default theme
 }
