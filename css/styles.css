@@ -75,17 +75,19 @@ Colour Pallet Dark Mode:
   }
   
   /* Navigation */
-  nav {
-    z-index: 10;
+nav {
     position: fixed;
+    top: 0;
+    background-color: #373c4f;
+    z-index: 999;
     font-size: calc(15px + 0.390625vw);
     letter-spacing: 3px;
     padding: 25px;
     width: 100vw;
     background: rgb(255 255 255 / 50%);
-  }
-  
-  nav a {
+}
+
+nav a {
     margin-right: 25px;
     color: var(--primary-colour);
     text-decoration: none;
@@ -93,10 +95,22 @@ Colour Pallet Dark Mode:
     font-weight: bold;
 }
 
-  nav a:hover,
-  nav a:focus {
+nav a:hover,
+nav a:focus {
     color: var(--on-background);
     border-bottom: 3px solid; /* Apply border only to nav links on hover/focus */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    nav {
+        padding: 15px; /* Decrease padding for smaller screens */
+        font-size: 14px; /* Decrease font size for smaller screens */
+    }
+
+    nav a {
+        margin-right: 15px; /* Decrease margin for smaller screens */
+    }
 }
   /* Additional styles for the preloader container */
   .preloader-container {
