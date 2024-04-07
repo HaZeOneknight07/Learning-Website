@@ -120,38 +120,49 @@ nav a:focus {
   .image-container {
     margin-right: 15px; /* Decrease margin for smaller screens */
   }
-  
-  /* Hide light/dark mode text on smaller screens */
-  .toggle-text {
-    display: none;
-  }
-}
-
-/* Media Query for adjusting size based on screen width */
-@media screen and (min-width: 768px) {
-  /* Adjustments for screens with a minimum width of 768px */
-  .toggle-text {
-    display: inline; /* Display light/dark mode text */
-  }
 
   .fas {
-    font-size: 3rem; /* Adjust size for larger screens */
+    font-size: 2rem; /* Decrease size for smaller screens */
   }
 
   .icon-theme-switcher {
-    display: none; /* Hide icon for larger screens */
+    display: none; /* Hide icon for smaller screens */
   }
 }
 
 /* Media Query for adjusting size based on screen width */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Adjustments for medium screens */
+  h1 {
+    font-size: 4rem; /* Decrease font size for medium screens */
+  }
+
+  h2 {
+    font-size: 2rem; /* Decrease font size for medium screens */
+  }
+
+  .text-box {
+    width: 60%; /* Adjust width of text box for medium screens */
+  }
+
+  .image-container {
+    margin-right: 20px; /* Decrease margin for medium screens */
+  }
+
+  .fas {
+    font-size: 2.5rem; /* Adjust size for medium screens */
+  }
+}
+
+/* Media Query for adjusting size based on screen width */
+@media screen and (min-width: 1025px) {
   /* Adjustments for larger screens */
   h1 {
     font-size: 8rem; /* Increase font size for larger screens */
   }
 
   h2 {
-    font-size: 2rem; /* Increase font size for larger screens */
+    font-size: 3rem; /* Increase font size for larger screens */
   }
 
   .title-group {
@@ -182,6 +193,14 @@ nav a:focus {
 
   footer {
     font-size: 3rem; /* Decrease font size for larger screens */
+  }
+
+  .fas {
+    font-size: 3rem; /* Adjust size for larger screens */
+  }
+
+  .icon-theme-switcher {
+    display: none; /* Hide icon for larger screens */
   }
 }
   /* Additional styles for the preloader container */
