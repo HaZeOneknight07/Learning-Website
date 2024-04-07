@@ -12,19 +12,19 @@ const LIGHT_THEME = 'light';
 
 // Dark or Light Images
 function imageMode(color) {
-  image1.src = `img/undraw_proud_coder_${color}.svg`;
-  image2.src = `img/undraw_feeling_proud_${color}.svg`;
-  image3.src = `img/undraw_conceptual_idea_${color}.svg`;
+  image1.src = `images/undraw_proud_coder_${color}.svg`;
+  image2.src = `images/undraw_feeling_proud_${color}.svg`;
+  image3.src = `images/undraw_conceptual_idea_${color}.svg`;
 }
 
 // Change Favicon
 function changeFavicon(mode) {
   const favicon = document.getElementById('favicon');
   if (mode === DARK_THEME) {
-    favicon.href = 'img/squash.png';
+    favicon.href = 'images/squash.png';
   } else {
     // Use the light mode favicon by default
-    favicon.href = 'img/squish.png';
+    favicon.href = 'images/squish.png';
   }
 }
 
@@ -42,7 +42,7 @@ function toggleDarkLightMode(mode) {
   const iconImg = toggleIcon.querySelector('.icon-theme-switcher');
 
   // Update icon source based on mode
-  iconImg.src = mode === DARK_THEME ? 'img/squash.png' : 'img/squish.png';
+  iconImg.src = mode === DARK_THEME ? 'images/squash.png' : 'images/squish.png';
 
   // Changing images
   imageMode(mode);

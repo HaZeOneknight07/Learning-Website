@@ -98,7 +98,23 @@ Colour Pallet Dark Mode:
     color: var(--on-background);
     border-bottom: 3px solid; /* Apply border only to nav links on hover/focus */
 }
-  
+  /* Additional styles for the preloader container */
+  .preloader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #111;
+    z-index: 9999; /* Make sure it appears above other content */
+}
+
+.hide {
+    display: none; /* Hide the preloader */
+}
   /* Home Section */
   .title-group {
     text-align: center;
