@@ -120,6 +120,27 @@ nav a:focus {
   .image-container {
     margin-right: 15px; /* Decrease margin for smaller screens */
   }
+  
+  /* Hide light/dark mode text on smaller screens */
+  .toggle-text {
+    display: none;
+  }
+}
+
+/* Media Query for adjusting size based on screen width */
+@media screen and (min-width: 768px) {
+  /* Adjustments for screens with a minimum width of 768px */
+  .toggle-text {
+    display: inline; /* Display light/dark mode text */
+  }
+
+  .fas {
+    font-size: 3rem; /* Adjust size for larger screens */
+  }
+
+  .icon-theme-switcher {
+    display: none; /* Hide icon for larger screens */
+  }
 }
 
 /* Media Query for adjusting size based on screen width */
