@@ -312,7 +312,7 @@ input:checked + .slider {
 }
 
 /* Media Query for adjusting size based on screen width */
-@media (min-width: 600px) {
+@media (max-width: 600px) {
   nav {
       padding-right: 50px; /* Adjust padding to create space for the toggle */
   }
