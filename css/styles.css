@@ -80,9 +80,9 @@ nav {
   top: 0;
   background-color: #373c4f;
   z-index: 999;
-  font-size: calc(15px + 0.390625vw);
+  font-size: calc(15px + 0.390625vw) !important;
   letter-spacing: 3px;
-  padding: 2rem;
+  padding: 2rem !important;
   width: 100%;
   background: rgb(255 255 255 / 50%);
 }
