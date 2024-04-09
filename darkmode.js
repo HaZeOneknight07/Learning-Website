@@ -1,4 +1,3 @@
-
 const toggleSwitch = document.querySelector('input[type="checkbox"]');
 const nav = document.getElementById('nav');
 const toggleIcon = document.getElementById('toggle-icon');
@@ -49,6 +48,9 @@ function toggleDarkLightMode(mode) {
 
   // Change favicon
   changeFavicon(mode);
+  
+  // Store theme preference in local storage
+  localStorage.setItem('theme', mode);
 }
 
 // Function to toggle dark mode
@@ -62,11 +64,10 @@ function toggleDarkMode() {
 function switchTheme(event) {
   const mode = event.target.checked ? DARK_THEME : LIGHT_THEME;
   document.documentElement.setAttribute('data-theme', mode);
-  localStorage.setItem('theme', mode);
   toggleDarkLightMode(mode);
 }
 
-// Event Listeners
+// Event Listener
 toggleSwitch.addEventListener('change', switchTheme);
 
 // Check Local Storage For Theme
