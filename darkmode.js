@@ -5,6 +5,8 @@ const textBox = document.getElementById('text-box');
 const image1 = document.getElementById('image1');
 const image2 = document.getElementById('image2');
 const image3 = document.getElementById('image3');
+const toggleText = toggleIcon.querySelector('.toggle-text');
+const iconImg = toggleIcon.querySelector('.icon-theme-switcher');
 
 const DARK_THEME = 'dark';
 const LIGHT_THEME = 'light';
@@ -31,14 +33,8 @@ function toggleDarkLightMode(mode) {
   nav.style.backgroundColor = mode === DARK_THEME ? 'rgb(0 0 0 / 50%)' : 'rgb(255 255 255 / 50%)';
   textBox.style.backgroundColor = mode === DARK_THEME ? 'rgb(255 255 255 / 50%)' : 'rgb(0 0 0 / 50%)';
 
-  // Selecting the toggle text element
-  const toggleText = toggleIcon.querySelector('.toggle-text');
-
   // Update text content based on mode
   toggleText.textContent = mode === DARK_THEME ? 'Dark Mode' : 'Light Mode';
-
-  // Selecting the toggle icon element
-  const iconImg = toggleIcon.querySelector('.icon-theme-switcher');
 
   // Update icon source based on mode
   iconImg.src = mode === DARK_THEME ? 'images/squash.png' : 'images/squish.png';
