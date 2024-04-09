@@ -74,43 +74,31 @@ Colour Pallet Dark Mode:
     color: var(--primary-variant);
   }
   
-  /* Navigation */
+/* Default styles for navigation and dark mode toggle */
 nav {
-    position: fixed;
-    top: 0;
-    background-color: #373c4f;
-    z-index: 999;
-    font-size: calc(15px + 0.390625vw);
-    letter-spacing: 3px;
-    padding: 25px;
-    width: 100%;
-    background: rgb(255 255 255 / 50%);
+  position: fixed;
+  top: 0;
+  background-color: #373c4f;
+  z-index: 999;
+  font-size: calc(15px + 0.390625vw);
+  letter-spacing: 3px;
+  padding: 25px;
+  width: 100%;
+  background: rgb(255 255 255 / 50%);
 }
 
 nav a {
-    margin-right: 25px;
-    color: var(--primary-colour);
-    text-decoration: none;
-    border-bottom: 3px solid transparent; /* Apply border to all links */
-    font-weight: bold;
+  margin-right: 25px;
+  color: var(--primary-colour);
+  text-decoration: none;
+  border-bottom: 3px solid transparent; /* Apply border to all links */
+  font-weight: bold;
 }
 
 nav a:hover,
 nav a:focus {
-    color: var(--on-background);
-    border-bottom: 3px solid; /* Apply border only to nav links on hover/focus */
-}
-
-/* Adjustments for smaller screens */
-@media (min-width: 768px) {
-    nav {
-        padding: 15px; /* Decrease padding for smaller screens */
-        font-size: 14px; /* Decrease font size for smaller screens */
-    }
-
-    nav a {
-        margin-right: 15px; /* Decrease margin for smaller screens */
-    }
+  color: var(--on-background);
+  border-bottom: 3px solid; /* Apply border only to nav links on hover/focus */
 }
   /* Additional styles for the preloader container */
   .preloader-container {
@@ -324,9 +312,34 @@ input:checked + .slider {
 }
 
 /* Media Query for adjusting size based on screen width */
-@media screen and (min-width: 768px) {
-  .fas {
-    font-size: 3rem; /* Adjust size for larger screens */
+@media (min-width: 600px) {
+  nav {
+      padding-right: 50px; /* Adjust padding to create space for the toggle */
+  }
+  
+  nav a {
+      margin-right: 15px; /* Decrease margin for smaller screens */
+  }
+
+  /* Hide the toggle switch text */
+  .toggle-text {
+      display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  nav {
+      padding: 15px; /* Decrease padding for smaller screens */
+      font-size: 14px; /* Decrease font size for smaller screens */
+  }
+
+  nav a {
+      margin-right: 15px; /* Decrease margin for smaller screens */
+  }
+
+  /* Show the toggle switch text */
+  .toggle-text {
+      display: block;
   }
 }
 
