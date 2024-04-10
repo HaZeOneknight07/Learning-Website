@@ -551,10 +551,6 @@ button.add-btn {
   visibility: visible;
 }
 
-#category-select {
-  background-color: red;
-}
-
 /* Dark Mode Toggle */
 .theme-switch-wrapper {
   display: flex;
