@@ -118,14 +118,14 @@ nav a:focus {
   }
 }
 
-/* Media Query for adjusting dark mode toggle text based on screen width */
+/* Media Query for adjusting dark mode toggle text based on screen width 
 @media screen and (min-width: 851px) and (max-width: 1024px) {
   .toggle-text {
-    transform: translateY(-1rem); /* Move the toggle text up by 1rem */
+    transform: translateY(-1rem); /* Move the toggle text up by 1rem 
   }
 }
 
-/* Media Query for adjusting size based on screen width */
+/* Media Query for adjusting size based on screen width 
 @media screen and (min-width: 1025px) {
   /* Adjustments for larger screens */
   /* h1 {
@@ -134,43 +134,43 @@ nav a:focus {
 
   h2 {
     font-size: 3rem; /* Increase font size for larger screens 
-  } */
+  } 
 
   .title-group {
-    margin-bottom: 100px; /* Increase margin for larger screens */
+    margin-bottom: 100px; /* Increase margin for larger screens 
   }
 
   .about-container {
-    flex-direction: row; /* Display about container items in row for larger screens */
+    flex-direction: row; /* Display about container items in row for larger screens 
   }
 
   #about,
   #contact {
-    width: 50%; /* Set width of about and contact sections for larger screens */
+    width: 50%; /* Set width of about and contact sections for larger screens 
   }
 
   .image-container {
-    width: 300px; /* Set width of image container for larger screens */
+    width: 300px; /* Set width of image container for larger screens 
   }
 
   img {
-    height: auto; /* Make image height auto for larger screens */
-    width: 100%; /* Make image width 100% for larger screens */
+    height: auto; /* Make image height auto for larger screens 
+    width: 100%; /* Make image width 100% for larger screens 
   }
 
   .text-box {
-    width: 50%; /* Set width of text box for larger screens */
+    width: 50%; /* Set width of text box for larger screens 
   }
 
   footer {
-    font-size: 3rem; /* Decrease font size for larger screens */
+    font-size: 3rem; /* Decrease font size for larger screens 
   }
 
   .fas {
-    font-size: 3rem; /* Adjust size for larger screens */
+    font-size: 3rem; /* Adjust size for larger screens 
   }
 }
-
+*/
 .wrapper {
   position: relative;
   height: 100vh;
