@@ -17,19 +17,19 @@ let categories = [
     },
     {
       title: "Health",
-      img: "healthcare.png",
+      img: "healthcare.gif",
     },
     {
       title: "Fitness",
-      img: "dumbbell.png",
+      img: "health.gif",
     },
     {
       title: "Education",
-      img: "education.png",
+      img: "education.gif",
     },
     {
       title: "Finance",
-      img: "saving.png",
+      img: "saving.gif",
     },
   ];
   
