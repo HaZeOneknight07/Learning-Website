@@ -30,7 +30,7 @@ Colour Pallet Dark Mode:
   --box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.5);
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   --primary-colour: #302f4d;
   --primary-variant: #84e296;
   --secondary-colour: #bfacc8;
@@ -62,7 +62,7 @@ section {
 }
 
 h1 {
-  font-family: 'Kaushan Script', sans-serif;
+  font-family: "Kaushan Script", sans-serif;
   font-size: 6.25rem;
   margin-bottom: 0;
   color: var(--primary-colour);
@@ -103,104 +103,103 @@ nav a:focus {
 
 /* Media Query for adjusting size based on screen width */
 @media screen and (max-width: 850px) {
-/* Adjustments for smaller screens */
-nav a {
-  margin-right: 15px; /* Decrease margin for smaller screens */
-}
+  /* Adjustments for smaller screens */
+  nav a {
+    margin-right: 15px; /* Decrease margin for smaller screens */
+  }
 
-.text-box {
-  width: 80%; /* Adjust width of text box for smaller screens */
-}
+  .text-box {
+    width: 80%; /* Adjust width of text box for smaller screens */
+  }
 
-.image-container {
-  margin-right: 15px; /* Decrease margin for smaller screens */
-}
+  .image-container {
+    margin-right: 15px; /* Decrease margin for smaller screens */
+  }
 
-.fas {
-  font-size: 2rem; /* Decrease size for smaller screens */
-  display: none;
-}
-
-/* .icon-theme-switcher {
-  display: none; /* Hide icon for smaller screens 
-} */
-.toggle-text {
-  display: none;
-}
+  .fas {
+    font-size: 2rem; /* Decrease size for smaller screens */
+    display: none;
+  }
+  .toggle-text {
+    display: none;
+  }
 }
 
 /* Media Query for adjusting size based on screen width */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-/* Adjustments for medium screens */
-h1 {
-  font-size: 4rem; /* Decrease font size for medium screens */
+  /* Adjustments for medium screens */
+  h1 {
+    font-size: 4rem; /* Decrease font size for medium screens */
+  }
+
+  h2 {
+    font-size: 2rem; /* Decrease font size for medium screens */
+  }
+
+  .text-box {
+    width: 60%; /* Adjust width of text box for medium screens */
+  }
+
+  .image-container {
+    margin-right: 20px; /* Decrease margin for medium screens */
+  }
+
+  .fas {
+    font-size: 2.5rem; /* Adjust size for medium screens */
+  }
 }
 
-h2 {
-  font-size: 2rem; /* Decrease font size for medium screens */
-}
-
-.text-box {
-  width: 60%; /* Adjust width of text box for medium screens */
-}
-
-.image-container {
-  margin-right: 20px; /* Decrease margin for medium screens */
-}
-
-.fas {
-  font-size: 2.5rem; /* Adjust size for medium screens */
-}
+/* Media Query for adjusting dark mode toggle text based on screen width */
+@media screen and (min-width: 851px) and (max-width: 1024px) {
+  .toggle-text {
+    transform: translateY(-1rem); /* Move the toggle text up by 1rem */
+  }
 }
 
 /* Media Query for adjusting size based on screen width */
 @media screen and (min-width: 1025px) {
-/* Adjustments for larger screens */
-h1 {
-  font-size: 8rem; /* Increase font size for larger screens */
-}
+  /* Adjustments for larger screens */
+  h1 {
+    font-size: 8rem; /* Increase font size for larger screens */
+  }
 
-h2 {
-  font-size: 3rem; /* Increase font size for larger screens */
-}
+  h2 {
+    font-size: 3rem; /* Increase font size for larger screens */
+  }
 
-.title-group {
-  margin-bottom: 100px; /* Increase margin for larger screens */
-}
+  .title-group {
+    margin-bottom: 100px; /* Increase margin for larger screens */
+  }
 
-.about-container {
-  flex-direction: row; /* Display about container items in row for larger screens */
-}
+  .about-container {
+    flex-direction: row; /* Display about container items in row for larger screens */
+  }
 
-#about,
-#contact {
-  width: 50%; /* Set width of about and contact sections for larger screens */
-}
+  #about,
+  #contact {
+    width: 50%; /* Set width of about and contact sections for larger screens */
+  }
 
-.image-container {
-  width: 300px; /* Set width of image container for larger screens */
-}
+  .image-container {
+    width: 300px; /* Set width of image container for larger screens */
+  }
 
-img {
-  height: auto; /* Make image height auto for larger screens */
-  width: 100%; /* Make image width 100% for larger screens */
-}
+  img {
+    height: auto; /* Make image height auto for larger screens */
+    width: 100%; /* Make image width 100% for larger screens */
+  }
 
-.text-box {
-  width: 50%; /* Set width of text box for larger screens */
-}
+  .text-box {
+    width: 50%; /* Set width of text box for larger screens */
+  }
 
-footer {
-  font-size: 3rem; /* Decrease font size for larger screens */
-}
+  footer {
+    font-size: 3rem; /* Decrease font size for larger screens */
+  }
 
-.fas {
-  font-size: 3rem; /* Adjust size for larger screens */
-}
-
-.icon-theme-switcher {
-  display: none; /* Hide icon for larger screens */
-}
+  .fas {
+    font-size: 3rem; /* Adjust size for larger screens */
+  }
 }
 /* Additional styles for the preloader container */
 .preloader-container {
@@ -259,7 +258,7 @@ footer {
 img {
   height: 300px;
   width: 300px;
-  color: var(--secondary-variant)
+  color: var(--secondary-variant);
 }
 
 /* Projects Section */
@@ -343,87 +342,91 @@ p {
 
 /* Dark Mode Toggle */
 .theme-switch-wrapper {
-display: flex;
-align-items: center;
-z-index: 100;
-position: fixed;
-right: 25px;
-top: 15px;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  position: fixed;
+  right: 25px;
+  top: 15px;
 }
 
 .theme-switch-wrapper span {
-margin-right: 10px;
-font-size: 1rem;
+  margin-right: 10px;
+  font-size: 1rem;
 }
 
 .toggle-text {
-color: var(--primary-colour);
+  color: var(--primary-colour);
 }
 
 .theme-switch {
-display: inline-flex; /* Use inline-flex to align items perfectly */
-align-items: center; /* Align items vertically */
+  display: inline-flex; /* Use inline-flex to align items perfectly */
+  align-items: center; /* Align items vertically */
 }
 
 .theme-switch input {
-display: none;
+  display: none;
 }
 
 .slider {
-background: var(--on-background-alt); /* Set default background color */
-cursor: pointer;
-position: relative;
-transition: background 0.3s ease; /* Added transition for background color */
-width: 60px; /* Width of the slider */
-height: 34px; /* Height of the slider */
-border-radius: 34px; /* Rounded corners for the slider */
+  background: var(--on-background-alt); /* Set default background color */
+  cursor: pointer;
+  position: relative;
+  transition: background 0.3s ease; /* Added transition for background color */
+  width: 60px; /* Width of the slider */
+  height: 34px; /* Height of the slider */
+  border-radius: 34px; /* Rounded corners for the slider */
 }
 
 .slider::before {
-background: var(--background); /* Set default circle color */
-content: '';
-position: absolute;
-transition: transform 0.3s ease; /* Added transition for transform */
-width: 26px; /* Width of the circle */
-height: 26px; /* Height of the circle */
-border-radius: 50%; /* Rounded corners for the circle */
-left: 4px; /* Adjusted position */
-top: 4px; /* Adjusted position */
+  background: var(--background); /* Set default circle color */
+  content: "";
+  position: absolute;
+  transition: transform 0.3s ease; /* Added transition for transform */
+  width: 26px; /* Width of the circle */
+  height: 26px; /* Height of the circle */
+  border-radius: 50%; /* Rounded corners for the circle */
+  left: 4px; /* Adjusted position */
+  top: 4px; /* Adjusted position */
 }
 
 input:checked + .slider {
-background: var(--primary-colour); /* Change background color for checked state */
+  background: var(
+    --primary-colour
+  ); /* Change background color for checked state */
 }
 
 .theme-switch input:checked + .slider::before {
-transform: translateX(26px); /* Adjusted transform value */
+  transform: translateX(26px); /* Adjusted transform value */
 }
 
-[data-theme='dark'] input:checked + .slider::before {
-background: var(--background); /* Change circle color to match background color in dark mode checked state */
+[data-theme="dark"] input:checked + .slider::before {
+  background: var(
+    --background
+  ); /* Change circle color to match background color in dark mode checked state */
 }
 
 .fas {
-font-size: 2rem; /* Increase the size for larger screens */
-margin-right: 5px;
+  font-size: 2rem; /* Increase the size for larger screens */
+  margin-right: 5px;
 }
 
 .icon-theme-switcher {
-width: 2.25rem;
-height: 2.25rem;
+  width: 2.25rem;
+  height: 2.25rem;
 }
 
 /* Media Query for adjusting size based on screen width */
 @media screen and (min-width: 768px) {
-.fas {
-  font-size: 3rem; /* Adjust size for larger screens */
-}
+  .fas {
+    font-size: 3rem; /* Adjust size for larger screens */
+  }
 }
 
 footer {
   background-color: var(--secondary-colour);
   color: var(--primary-colour);
-  font-family: 'Kaushan Script', sans-serif;
+  font-family: "Kaushan Script", sans-serif;
   text-align: center;
   position: relative;
   font-size: 5rem;
