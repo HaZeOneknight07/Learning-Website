@@ -433,3 +433,29 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
+@media screen and (min-width: 469px) {
+  /* Adjustments for smaller screens */
+  nav {
+    font-size: 1rem;
+  }
+  nav a {
+    margin-right: 10px; /* Decrease margin for smaller screens */
+  }
+
+  .text-box {
+    width: 80%; /* Adjust width of text box for smaller screens */
+  }
+
+  .image-container {
+    margin-right: 15px; /* Decrease margin for smaller screens */
+  }
+
+  .fas {
+    font-size: 2rem; /* Decrease size for smaller screens */
+    display: none;
+  }
+  .toggle-text {
+    display: none;
+  }
+}
