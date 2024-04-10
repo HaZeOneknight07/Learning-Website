@@ -514,6 +514,7 @@ nav a:focus {
   font-weight: 600;
   transition: all 0.3s;
   z-index: 1;
+  background: var(--background);
 }
 
 button.add-btn {
@@ -548,6 +549,10 @@ button.add-btn {
 .black-backdrop.active {
   opacity: 1;
   visibility: visible;
+}
+
+#category-select {
+  background-color: red;
 }
 
 /* Dark Mode Toggle */
