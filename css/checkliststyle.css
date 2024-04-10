@@ -97,13 +97,13 @@ nav a:focus {
 /* Media Query for adjusting size based on screen width */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   /* Adjustments for medium screens */
-  /* h1 {
-    font-size: 4rem; /* Decrease font size for medium screens 
+  h1 {
+    font-size: 4rem; /* Decrease font size for medium screens */
   }
 
   h2 {
-    font-size: 2rem; /* Decrease font size for medium screens 
-  } */
+    font-size: 2rem; /* Decrease font size for medium screens */
+  }
 
   .text-box {
     width: 60%; /* Adjust width of text box for medium screens */
@@ -128,13 +128,13 @@ nav a:focus {
 /* Media Query for adjusting size based on screen width */
 @media screen and (min-width: 1025px) {
   /* Adjustments for larger screens */
-  h1 {
-    font-size: 8rem; /* Increase font size for larger screens */
+  /* h1 {
+    font-size: 8rem; /* Increase font size for larger screens 
   }
 
   h2 {
-    font-size: 3rem; /* Increase font size for larger screens */
-  }
+    font-size: 3rem; /* Increase font size for larger screens 
+  } */
 
   .title-group {
     margin-bottom: 100px; /* Increase margin for larger screens */
