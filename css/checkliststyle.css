@@ -178,7 +178,7 @@ nav a:focus {
   overflow: hidden;
   padding: 30px 0;
   display: flex;
-  margin-top: 10rem; /* To seperate wrapper from nav bar when in mobile view */
+  margin-top: 5rem; /* To seperate wrapper from nav bar when in mobile view */
 }
 
 @media (min-width: 768px) {
