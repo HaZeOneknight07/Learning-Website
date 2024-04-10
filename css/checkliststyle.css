@@ -487,7 +487,7 @@ nav a:focus {
   padding: 10px;
   font-size: 16px;
   background-color: var(--background);
-  color: #fff;
+  color: #373c4f;
 }
 
 .input-group label {
