@@ -255,11 +255,11 @@ nav a:focus {
   box-shadow: var(--primary-colour);
 }
 
-img {
+/* img {
   height: 300px;
   width: 300px;
   color: var(--secondary-variant);
-}
+} */
 
 /* Projects Section */
 .buttons {
