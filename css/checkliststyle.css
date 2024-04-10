@@ -486,6 +486,7 @@ nav a:focus {
   border-radius: 5px;
   padding: 10px;
   font-size: 16px;
+  background-color: var(--background);
 }
 
 .input-group label {
@@ -516,7 +517,7 @@ nav a:focus {
 }
 
 button.add-btn {
-  background-color: #39a6f0;
+  background-color: var(--secondary-variant);
   color: #fff;
 }
 
@@ -528,7 +529,7 @@ button.add-btn {
   width: 135%;
   height: 20rem;
   border-radius: 50% 50% 0 0;
-  background-color: #fff;
+  background-color: var(--primary-variant);
 }
 
 .black-backdrop {
