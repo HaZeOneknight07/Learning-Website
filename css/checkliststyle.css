@@ -190,6 +190,7 @@ nav a:focus {
 }
 
 .wrapper .screen {
+  margin-top: 10rem;
   min-width: 100%;
   flex: 1;
   transition: all 0.3s;
