@@ -444,7 +444,7 @@ footer {
   }
 
   .text-box {
-    width: 80%; /* Adjust width of text box for smaller screens */
+    width: 100%; /* Adjust width of text box for smaller screens */
   }
 
   .image-container {
