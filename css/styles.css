@@ -324,7 +324,7 @@ input:checked + .slider {
 }
 
 /* Media Query for adjusting size based on screen width */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .fas {
     font-size: 3rem; /* Adjust size for larger screens */
   }
